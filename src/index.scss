@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+:root {
+  --font-family: "Dancing Script", cursive;
+}
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg {
+  height: 100vh;
+  background-image: url("./images/fone.avif");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.Tomiris {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.Tusay {
+  font-size: 25px;
+  color: var(--secondary-color);
+  margin-top: -5px;
+}
+
+.suret {
+  position: relative;
+  margin-top: -60px;
+  border-radius: 50%; /* Делаем изображение круглым */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.kurmet {
+  margin-top: -20px;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+.kurmet2 {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+.tomi {
+  font-size: 35px;
+}
+.tomi2 {
+  margin-top: -15px;
+  font-size: 25px;
+  align-items: center;
+}
+
+.tomi3 {
+  font-size: 25px;
+}
+
+.bastau {
+  font-size: 30px;
+}
+.bastau2 {
+  margin-top: -20px;
+  font-size: 20px;
+}
+
+.rotate-image {
+  animation: rotate 20s linear infinite;
+}
+.meken {
+  font-size: 20px;
+}
+.meken2 {
+  font-size: 20px;
+  margin-top: -15px;
+}
+.sizder {
+  font-size: 20px;
+}
+.sizder2 {
+  font-size: 20px;
+  margin-top: -15px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
