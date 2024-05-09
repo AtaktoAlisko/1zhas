@@ -67,13 +67,13 @@ function App() {
           <p className="sizder2">төмендегі көрсетілген картаны қолданыңыз</p>
           <Map />
 
-          <p>5 шілдеге дейін:</p>
+          <p className="toi3">5 шілдеге дейін:</p>
           <DateComponent />
 
           <AttendanceForm />
-          <p>Той иелері </p>
+          <p className="toi">Той иелері </p>
           <h1>Алибек && Мөлдір</h1>
-          <p>Келініздер қуанышымызға ортақ болыныздар!</p>
+          <p className="toi2">Келініздер қуанышымызға ортақ болыныздар!</p>
 
           <img
             id="devoska-img"

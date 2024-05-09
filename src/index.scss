@@ -49,6 +49,7 @@ body {
 
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .Tusay {
@@ -118,4 +119,15 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.toi {
+  font-size: 20px;
+}
+.toi2 {
+  font-size: 15px;
+}
+.toi3 {
+  margin-top: 20px;
+  font-size: 18px;
 }
