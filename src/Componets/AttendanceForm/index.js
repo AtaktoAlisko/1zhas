@@ -34,7 +34,7 @@ function AttendanceForm() {
       <div className="form center">
         <p className={styles.anketa}>Анкетаны толтыруыңызды сұраймыз</p>
         <p className={styles.anketa2}>Біз үшін өте маңызды!</p>
-        <div>
+        <div className="formalar">
           <form className="form" onSubmit={(e) => Submit(e)}>
             <input
               className={styles.atiniz}
@@ -44,37 +44,39 @@ function AttendanceForm() {
             />
             <input placeholder="Тілектеріңіз" name="Message" type="text" />
 
-            <div>
-              <input
-                type="radio"
-                id="willAttend"
-                value="Приду"
-                checked={attendance === "Приду"}
-                onChange={() => setAttendance("Приду")}
-              />
-              <label htmlFor="willAttend">Келемін</label>
+            <div className={styles.radio}>
+              <div>
+                <input
+                  type="radio"
+                  id="willAttend"
+                  value="Приду"
+                  checked={attendance === "Приду"}
+                  onChange={() => setAttendance("Приду")}
+                />
+                <label htmlFor="willAttend">Келемін</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="willAttendWithWife"
+                  value="Приду с женой"
+                  checked={attendance === "Приду с женой"}
+                  onChange={() => setAttendance("Приду с женой")}
+                />
+                <label htmlFor="willAttendWithWife">Жұбайымен</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="cannotAttend"
+                  value="Не могу прийти"
+                  checked={attendance === "Не могу прийти"}
+                  onChange={() => setAttendance("Не могу прийти")}
+                />
+                <label htmlFor="cannotAttend">Келе алмаймын</label>
+              </div>
             </div>
-            <div>
-              <input
-                type="radio"
-                id="willAttendWithWife"
-                value="Приду с женой"
-                checked={attendance === "Приду с женой"}
-                onChange={() => setAttendance("Приду с женой")}
-              />
-              <label htmlFor="willAttendWithWife">Жұбайымен</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="cannotAttend"
-                value="Не могу прийти"
-                checked={attendance === "Не могу прийти"}
-                onChange={() => setAttendance("Не могу прийти")}
-              />
-              <label htmlFor="cannotAttend">Келе алмаймын</label>
-            </div>
-            <input name="Name" type="submit" />
+            <input placeholder="Жіберу" name="Name" type="submit" />
           </form>
         </div>
       </div>

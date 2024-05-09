@@ -23,7 +23,7 @@ function Musik() {
       className={`${styles.muzik} ${isPlaying ? "rotate-image" : ""}`}
       onClick={play}
     >
-      <img height={100} width={100} src={proigr} alt="musik" />
+      <img height={25} width={25} src={proigr} alt="musik" />
     </button>
   );
 }

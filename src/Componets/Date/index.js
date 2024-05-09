@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import styles from "./date.module.scss";
 
 function DateComponent() {
   const [remainingTime, setRemainingTime] = useState(calculateRemainingTime());
@@ -12,7 +13,7 @@ function DateComponent() {
   }, []);
 
   function calculateRemainingTime() {
-    const date = new Date(2024, 7, 5); // Define the date here
+    const date = new Date(2024, 7, 5);
     const difference = date.getTime() - new Date().getTime();
 
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -26,8 +27,8 @@ function DateComponent() {
   }
 
   return (
-    <p>
-      {remainingTime.days} дней, {remainingTime.hours} часов,{" "}
+    <p className={styles.remainingTime}>
+      {remainingTime.days} күн, {remainingTime.hours} сағат,{" "}
       {remainingTime.minutes} минут, {remainingTime.seconds} секунд
     </p>
   );
